@@ -16,9 +16,9 @@ class CyclemeterDB:
             db.row_factory = sqlite3.Row
             c = db.cursor()
         except Exception as ex:
-            print "Error opening {}".format(filename)
-            print ex.message
-            print ex.args
+            print("Error opening {}".format(filename))
+            print(ex.message)
+            print(ex.args)
             return
 
         self.runs = []
